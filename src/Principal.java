@@ -1,3 +1,4 @@
+import br.com.projeto.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.projeto.screenmatch.modelos.Filme;
 import br.com.projeto.screenmatch.modelos.Serie;
 
@@ -24,8 +25,21 @@ public class Principal {
         serie1.setTemporadas(17);
         serie1.setEpisodiosPorTemporada(22);
         serie1.setMinutosPorEpisodio(40);
-        serie1.exibeFichaTecnica();
+        serie1.exibeFichaTecnica(); //imprimirá a duração por causa do metodo
         System.out.println("Duração total da série: " + serie1.getDuracaoEmMinutos());
+
+        Filme filme2 = new Filme();
+        filme2.setNome("O Poderoso Chefão");
+        filme2.setAnoDeLancamento(1972);
+        filme2.setDuracaoEmMinutos(100);
+        System.out.println(filme2.getNome());
+        System.out.println(filme2.getAnoDeLancamento());
+        System.out.println(filme2.getDuracaoEmMinutos());
+
+        CalculadoraDeTempo calculadora1 = new CalculadoraDeTempo();
+        calculadora1.somaDaDuracao(filme1);
+        calculadora1.somaDaDuracao(filme2);
+        System.out.println(calculadora1.getTempoTotal());
 
 
     }
