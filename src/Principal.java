@@ -11,6 +11,7 @@ public class Principal {
         filme1.avalia(6.4);
         System.out.println(filme1.somaDasAvaliacoes);
         System.out.println(filme1.totalDeAvaliacoes);
+        System.out.println(filme1.retornaMediaDasAvaliacoes());
 
 
     }
