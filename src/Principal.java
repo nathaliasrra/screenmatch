@@ -21,7 +21,11 @@ public class Principal {
         Serie serie1 = new Serie();
         serie1.setNome("Supernatural");
         serie1.setAnoDeLancamento(2003);
+        serie1.setTemporadas(17);
+        serie1.setEpisodiosPorTemporada(22);
+        serie1.setMinutosPorEpisodio(40);
         serie1.exibeFichaTecnica();
+        System.out.println("Duração total da série: " + serie1.getDuracaoEmMinutos());
 
 
     }
