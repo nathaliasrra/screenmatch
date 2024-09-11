@@ -16,4 +16,8 @@ public class Filme {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
+
+    double retornaMediaDasAvaliacoes() {
+        return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
 }
