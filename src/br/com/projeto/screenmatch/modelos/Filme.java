@@ -6,6 +6,6 @@ public class Filme extends Titulo implements ClassificacaoEstrela {
 
     @Override
     public int getClassificacao() {
-        return 0;
+        return (int) retornaMediaDasAvaliacoes() / 2;
     }
 }
