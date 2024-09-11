@@ -11,4 +11,9 @@ public class Filme {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração: " + duracaoEmMinutos);
     }
+
+    void avalia(double nota) {
+        somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
+    }
 }
