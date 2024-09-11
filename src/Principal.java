@@ -4,7 +4,13 @@ public class Principal {
         filme1.nome = "O Poderoso Chefão";
         filme1.anoDeLancamento = 1972;
         filme1.duracaoEmMinutos = 180;
+
         filme1.exibeFichaTecnica();
+        filme1.avalia(8);
+        filme1.avalia(5.9);
+        filme1.avalia(6.4);
+        System.out.println(filme1.somaDasAvaliacoes);
+        System.out.println(filme1.totalDeAvaliacoes);
 
 
     }
