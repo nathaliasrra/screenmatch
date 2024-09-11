@@ -1,4 +1,5 @@
 import br.com.projeto.screenmatch.modelos.Filme;
+import br.com.projeto.screenmatch.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -16,6 +17,11 @@ public class Principal {
         filme1.avalia(6.4);
         System.out.println("Total de avaliações: " + filme1.getTotalDeAvaliacoes());
         System.out.println(filme1.retornaMediaDasAvaliacoes());
+
+        Serie serie1 = new Serie();
+        serie1.setNome("Supernatural");
+        serie1.setAnoDeLancamento(2003);
+        serie1.exibeFichaTecnica();
 
 
     }
