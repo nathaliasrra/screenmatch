@@ -8,6 +8,22 @@ public class Filme {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
     int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
@@ -28,18 +44,18 @@ public class Filme {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração: " + duracaoEmMinutos);
     }
 
-    void avalia(double nota) {
+    public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double retornaMediaDasAvaliacoes() {
+    public double retornaMediaDasAvaliacoes() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
